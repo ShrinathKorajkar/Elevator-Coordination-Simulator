@@ -68,6 +68,14 @@ bash ./scripts/runUnitTests.sh
 
 ## Demo
 
-- Find the video for demo - ![Demo](demo/ElevatorProject.mp4)
-- Configuration Screen - ![Input Screen](demo/InputScreen.png)
-- Simulation Screen - ![Simulation Screen](demo/OutputScreen.png)
+#### Find the video for demo:
+
+![Demo.mp4](demo/ElevatorProject.mp4)
+
+#### Configuration Screen:
+
+![Input Screen](demo/InputScreen.png)
+
+#### Simulation Screen:
+
+![Simulation Screen](demo/OutputScreen.png)
