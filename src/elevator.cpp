@@ -244,7 +244,8 @@ void Building::takeRealTimeInput()
         return;
     }
     std::string line;
-    std::regex pattern("^(f)(-?\\d+)(d)(\\d+)$");
+    std::regex pattern("^\\s*(f)(-?\\d+)(d)(\\d+)\\s*$");
+    std::regex quitePattern("^\\s*q\\s*$");
     std::smatch matches;
     int floorNumber = 0;
     int direction = 0;
@@ -253,7 +254,7 @@ void Building::takeRealTimeInput()
         if (std::getline(input, line))
         {
             std::transform(line.begin(), line.end(), line.begin(), ::tolower);
-            if (line == "q")
+            if (std::regex_search(line, matches, quitePattern))
             {
                 stopPrinting = true;
                 break;
